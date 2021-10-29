@@ -578,7 +578,7 @@ if (budy.includes("https://m.facebook.com/")){
 		}, 0)
 	}
 			
-	if (budy.includes("https://youtu.be/")){
+	if (budy.includes("https://www.youtube.com/")){
 		if (!isGroup) return
 		if (!isAntiTube) return
 	        if (isGroupAdmins) return reply('Eres un administrador del grupo, así que no te prohibiré el uso de enlaces :)')
