@@ -258,12 +258,13 @@ client.on('group-participants-update', async (anu) => {
 					ppimg = 'https://i.ibb.co/2ZHZCH4/bienvenida-Siarabotby-Drevill.jpg'
 				}
 				teks = ` ┌──┨ ☠️𝕾𝖎𝖆𝖗𝖆𝕭𝖔𝖙☠️ ┠──\n`
-				teks += `▢ ${mdata.subject}\n`
-				teks += `▢ BIENVENIDO(A)\n`
-				teks += `▢ @${num.split('@')[0]}\n`
-				teks += `▢ Presentate Con:\n`
-				teks += `▢Foto ▢Nombre ▢Edad ▢País\n`
-				teks += `▢ Respeta las reglas\n`
+				teks += `★ ${mdata.subject}\n`
+				teks += `★ BIENVENIDO(A)\n`
+				teks += `★ @${num.split('@')[0]}\n`
+				teks += `★ Presentate Con:\n`
+				teks += `★ Foto ★Nombre ★Edad ★País\n`
+				teks += `★ Respeta las reglas\n`
+				teks += `★ Si no te presentas vas para afuera\n`
 				teks += `└──┨ ☠️Drevill☠️ ┠──\n`
 				  let buff = await getBuffer(ppimg)
 			client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
