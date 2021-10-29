@@ -269,14 +269,8 @@ client.on('group-participants-update', async (anu) => {
 			client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			} else if (anu.action == 'remove') {
 				num = anu.participants[0]
-				try {
-					ppimg = await client.getProfilePicture(`${anu.participants[0].split('@')[0]}@c.us`)
-				} catch {
-					ppimg = 'https://i.ibb.co/2ZHZCH4/bienvenida-Siarabotby-Drevill.jpg'
-				}
-				teks = `Bueno...Un pendejo menos @${num.split('@')[0]}`
-				 let buff = await getBuffer(ppimg)
-			client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
+				teks = `Bueno...Un pendejo menos  @${num.split('@')[0]}`
+				client.sendMessage(mdata.id, teks, MessageType.text, {contextInfo: {"mentionedJid": [num]}})
 			} else if (anu.action == 'promote') {
 				num = anu.participants[0]
 				try {
