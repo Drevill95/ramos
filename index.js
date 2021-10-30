@@ -1474,7 +1474,7 @@ break
 case 'off':
 if (!isOwner) return reply('Solo el jefe puede darme ordenes!')
 if (!isOwner) return reply('Me apagare en 3 Segundos....')
-await sleep(5000)
+await sleep(2000)
 client.close()
 break					
 					
