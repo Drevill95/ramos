@@ -1527,7 +1527,7 @@ break
 				case 'sticker':
 				case 'stickergif':
 				case 'stikergif':
-			        if (!isUser) return reply(mess.only.daftarB)
+			     if (!isUser) return reply(mess.only.daftarB)
 				if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
 						const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
 						const media = await client.downloadAndSaveMediaMessage(encmedia)
@@ -1562,7 +1562,7 @@ break
 						const encmedia = isQuotedVideo ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
 						const media = await client.downloadAndSaveMediaMessage(encmedia)
 						ran = getRandom('.webp')
-						reply(mess.wait)
+						reply(mess.only.pegatina)
 						await ffmpeg(`./${media}`)
 							.inputFormat(media.split('.')[1])
 							.on('start', function (cmd) {
