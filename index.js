@@ -1312,7 +1312,7 @@ case 'alv':
 if (!isBotGroupAdmins) return reply(mess.only.Badmin)
 if (!isGroupAdmins) return reply(mess.only.admin)
 if (!isGroup) return reply(mess.only.group)
-if (mek.message.extendedTextMessage === null || mek.message.extendedTextMessage === undefined) return reply('MARCA AL QUE VOY A SACAR')
+if (mek.message.extendedTextMessage === null || mek.message.extendedTextMessage === undefined) return reply('Marca al que vamos a funar')
 if (mek.message.extendedTextMessage.contextInfo.participant === undefined) {
 entah = mek.message.extendedTextMessage.contextInfo.mentionedJid
 if (entah.length > 1) {
