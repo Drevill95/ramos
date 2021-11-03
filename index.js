@@ -259,19 +259,18 @@ client.on('group-participants-update', async (anu) => {
 					ppimg = 'https://i.ibb.co/2ZHZCH4/bienvenida-Siarabotby-Drevill.jpg'
 				}
 				teks = ` ┌──┨ ☠️𝕾𝖎𝖆𝖗𝖆𝕭𝖔𝖙☠️ ┠──\n`
-				teks += `★ ${mdata.subject}\n`
-				teks += `★ BIENVENIDO(A)\n`
+				teks += `★ ʙɪᴇɴᴠᴇɴɪᴅᴏ(ᴀ)\n`
 				teks += `★ @${num.split('@')[0]}\n`
-				teks += `★ Presentate Con:\n`
-				teks += `★ Foto ★Nombre ★Edad ★País\n`
-				teks += `★ Respeta las reglas\n`
-				teks += `★ Si no te presentas vas para afuera\n`
-				teks += `└──┨ ☠️Drevill☠️ ┠──\n`
+				teks += `★ ${mdata.subject}\n`
+				teks += `└──┨ ☠️Drevill☠️ ┠──\n\n`
+				teks += `*ᴘʀᴇꜱᴇɴᴛᴀᴛᴇ ᴄᴏɴ ꜰᴏᴛᴏ, ɴᴏᴍʙʀᴇ, ᴇᴅᴀᴅ, ᴘᴀɪꜱ*\n\n`
+				teks += `ʟᴇᴇ ʟᴀꜱ ʀᴇɢʟᴀꜱ ʏ ᴇᴠɪᴛᴀ ʜᴀᴄᴇʀ ᴄᴜᴀʟQᴜɪᴇʀ ᴘᴇɴᴅᴇᴊᴀᴅᴀ`
 				  let buff = await getBuffer(ppimg)
 			client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			} else if (anu.action == 'remove') {
 				num = anu.participants[0]
-				teks = `Bueno...Un pendejo menos  @${num.split('@')[0]}`
+				teks = `Una puta menos  @${num.split('@')[0]}`
+				teks = `Quedan: ${groupMembers.length}`
 				client.sendMessage(mdata.id, teks, MessageType.text, {contextInfo: {"mentionedJid": [num]}})
 			} else if (anu.action == 'promote') {
 				num = anu.participants[0]
