@@ -1331,6 +1331,17 @@ entah = ridwan.message.extendedTextMessage.contextInfo.participant
 client.groupRemove(from, [entah])
 }
 break	
+					
+case 'okick':
+if (!isGroup) return reply(mess.only.group)
+if (!isGroupAdmins) return reply(mess.only.admin)
+if (!isBotGroupAdmins) return reply(mess.only.Badmin)	
+if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('✳️ Responde a un mensaje!')
+			kick =  mek.message.extendedTextMessage.contextInfo.mentionedJid
+		    client.groupRemove(from, [kick])
+						reply('✅ Ordenes recibidas, emitidas')
+                    break					
+					
 
 case 'demote':
 if (!isGroup) return reply(mess.only.group)
