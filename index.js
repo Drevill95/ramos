@@ -806,7 +806,7 @@ try{
 if (!isUser) return reply(mess.only.daftarB)
 if (!isGroup) return reply(mess.only.group)
 d = []
-teks = 'Top 5 de los mas gays del grupo\n\n'
+teks = '🏳️‍🌈 *TOP 5 GAYS*\n Está es una lista de los más gays del grupo\n\n'
 for(i = 0; i < 5; i++) {
 r = Math.floor(Math.random() * groupMetadata.participants.length + 0)
 teks += `➔ @${groupMembers[r].jid.split('@')[0]}\n`
@@ -824,7 +824,7 @@ try{
 if (!isUser) return reply(mess.only.daftarB)
 if (!isGroup) return reply(mess.only.group)
 d = []
-teks = 'Top 5 de los mas pendejos del grupo\n\n'
+teks = '🤪 *TOP 5 PENEJOS *\n Está es una lista de los más pendejos del grupo\n\n'
 for(i = 0; i < 5; i++) {
 r = Math.floor(Math.random() * groupMetadata.participants.length + 0)
 teks += `➔ @${groupMembers[r].jid.split('@')[0]}\n`
@@ -838,6 +838,8 @@ reply('Hubo un error intentalo nuevamente :/')
 break	
 
 case 'lucky':
+if (!isUser) return reply(mess.only.daftarB)
+if (!isGroup) return reply(mess.only.group)					
 a = '🍇'
 b = '🍎'
 c = '🍓'
