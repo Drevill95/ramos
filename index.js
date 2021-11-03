@@ -1987,8 +1987,8 @@ break
         const none = fs.readFileSync('./mp3/maau1.mp3');
 		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
                   }
-        if (budy.startsWith(`Cuentate un chiste`)) {
-        const none = fs.readFileSync('./mp3/dylan2.mp3');
+        if (budy.startsWith(`pro`)) {
+        const none = fs.readFileSync('./mp3/Que pro.mp3');
 		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
                   }
 	if (budy.startsWith(`Admin party`)) {
