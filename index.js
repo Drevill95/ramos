@@ -1311,7 +1311,7 @@ case'balazo':
 case 'alv':
 if (!isGroup) return reply(mess.only.group)
 if (!isGroupAdmins) return reply(mess.only.admin)
-if (!isBotGroupAdmins) return reply(mess.only.Badmin)
+if (!isBotGroupAdmins) return reply(mess.only.Badmin)					
 if (mek.message.extendedTextMessage === null || mek.message.extendedTextMessage === undefined) return reply('Marca al que vamos a funar')
 if (mek.message.extendedTextMessage.contextInfo.participant === undefined) {
 entah = mek.message.extendedTextMessage.contextInfo.mentionedJid
@@ -1328,8 +1328,7 @@ client.groupRemove(from, [entah[0]])
 entah = ridwan.message.extendedTextMessage.contextInfo.participant
 client.groupRemove(from, [entah])
 }
-					
-break
+break	
 
 case 'demote':
 if (!isGroup) return reply(mess.only.group)
