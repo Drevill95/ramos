@@ -269,8 +269,7 @@ client.on('group-participants-update', async (anu) => {
 			client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			} else if (anu.action == 'remove') {
 				num = anu.participants[0]
-				teks = `Una puta menos  @${num.split('@')[0]}`
-				teks = `Quedan: ${groupMembers.length}`
+				teks = `ꜱᴇ ꜰᴜᴇ ᴜɴᴀ ᴘᴜᴛᴀ ᴍᴇɴᴏꜱ @${num.split('@')[0]}`
 				client.sendMessage(mdata.id, teks, MessageType.text, {contextInfo: {"mentionedJid": [num]}})
 			} else if (anu.action == 'promote') {
 				num = anu.participants[0]
