@@ -1517,10 +1517,6 @@ break
 //CREACION DE STICKERS Y VARIOS				
 				
 				case 's':
-				case 'tucson':
-				case 'opa':
-			 	case 'siara':
-				case 'nefasto':
 				case 'stiker':
 				case 'sticker':
 				case 'stickergif':
